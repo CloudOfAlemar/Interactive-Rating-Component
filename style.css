@@ -1,0 +1,238 @@
+
+/* ========================================== */
+/* Base Styles */
+/* ========================================== */
+html {
+  font-family: 'Overpass', sans-serif;
+  font-size: .625rem;
+}
+
+body {
+  min-width: 375px; 
+  min-height: 100vh;
+  background-color: hsl(228, 11%, 9%);
+  padding: 175px 25px 25px;
+  box-sizing: border-box;
+}
+
+/* ========================================== */
+/* Groups */
+/* ========================================== */
+
+/* Margin */
+body, h1, h2, p,
+.radio-input {
+  margin: 0;
+}
+
+.component-icon,
+.component-heading {
+  margin-bottom: 15px;
+}
+
+.component-description,
+.radio-input-wrapper,
+.rating-display {
+  margin-bottom: 20px;
+}
+
+.component-base,
+.rating-display {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding */
+.submit-button,
+.rating-display {
+  padding: 10px;
+}
+
+/* Font Size */
+.component-description,
+.radio-input,
+.submit-button,
+.rating-display {
+  font-size: 1.4rem;
+}
+
+/* Text Align */
+.component-illustration-wrapper,
+.rating-display,
+.component-heading-thank-you,
+.component-description-thank-you {
+  text-align: center;
+}
+
+/* Color */
+h1, h2, button,
+.radio-input:hover,
+.radio-input:checked {
+  color: hsl(180, 17%, 98%);
+}
+
+p, .radio-input {
+  color: hsl(215, 7%, 49%);
+}
+
+/* Background Color */
+.header-content,
+.component-base {
+  background-color: hsl(215, 22%, 15%);
+}
+
+.component-icon,
+.radio-input,
+.rating-display {
+  background-color: hsl(210, 19%, 18%);
+}
+
+.submit-button,
+.radio-input:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+/* Border Radius */
+.component-icon,
+.radio-input {
+  border-radius: 50%;
+}
+
+.submit-button,
+.rating-display {
+  border-radius: 50px;
+}
+
+/* Cursor */
+.radio-input:hover,
+.submit-button {
+  cursor: pointer;
+}
+
+/* Transition */
+.radio-input,
+.submit-button {
+  transition: background-color 350ms, color 350ms;
+}
+
+/* ========================================== */
+/* Header Content */
+/* ========================================== */
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 375px;
+  padding: 25px;
+  border-bottom: 5px solid hsl(25, 97%, 53%);
+  border-radius: 0 0 25px 25px;
+  box-sizing: border-box;
+}
+
+.page-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ========================================== */
+/* Main Content */
+/* ========================================== */
+.component-base {
+  max-width: 325px;
+  border-radius: 25px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.component-icon {
+  height: 1.4rem;
+  padding: 10px;
+}
+
+.component-heading {
+  font-size: 2.5rem;
+}
+
+.radio-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-input {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+}
+
+.radio-input::before {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-input:checked {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.rating-1::before {
+  content: "1";
+}
+.rating-2::before {
+  content: "2";
+}
+.rating-3::before {
+  content: "3";
+}
+.rating-4::before {
+  content: "4";
+}
+.rating-5::before {
+  content: "5";
+}
+
+.submit-button {
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(180, 17%, 98%);
+}
+
+.component-illustration-wrapper {
+  margin-bottom: 15px;
+}
+
+.rating-display {
+  color: hsl(25, 97%, 53%);
+  width: 150px;
+}
+
+/* ========================================== */
+/* Animations */
+/* ========================================== */
+
+@keyframes ascend{
+  0% {
+    transform: translateY(35%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.ascend {
+  animation: ascend;
+  animation-timing-function: ease-in-out;
+  animation-duration: 650ms;
+}
+
+.hide {
+  display: none;
+}

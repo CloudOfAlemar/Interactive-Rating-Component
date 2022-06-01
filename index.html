@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+
+  <header class="header-content">
+    <h1 class="page-heading">Interactive Rating Component</h1>
+  </header>
+  
+  <main class="main-content">
+
+    <section class="component-base component-base-rating">
+      <img src="img/icon-star.svg" alt="Icon of a star" class="component-icon">
+      <h2 class="component-heading">
+        How did we do?
+      </h2>
+      <p class="component-description">
+        Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+      
+      <form action="POST" class="form-content">
+        <section class="radio-input-wrapper">
+          <input type="radio" name="rating" class="radio-input rating-1" value="1">
+          <input type="radio" name="rating" class="radio-input rating-2" value="2">
+          <input type="radio" name="rating" class="radio-input rating-3" value="3">
+          <input type="radio" name="rating" class="radio-input rating-4" value="4">
+          <input type="radio" name="rating" class="radio-input rating-5" value="5">
+        </section>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+
+    <section class="component-base component-base-thank-you hide">
+      <div class="component-illustration-wrapper">
+        <img src="img/illustration-thank-you.svg" 
+          alt="Illustration of a card transaction" class="component-illustration">
+      </div>
+      <div class="rating-display">
+        You selected <span class="rating-display-value">0</span> out of 5
+      </div>
+      <h2 class="component-heading component-heading-thank-you">
+        Thank you!
+      </h2>
+      <p class="component-description component-description-thank-you">
+        We appreciate you taking the time to give a rating. If you ever
+        need more support, don't hesitate to get in touch!
+      </p>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
