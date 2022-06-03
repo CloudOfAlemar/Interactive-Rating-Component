@@ -28,13 +28,28 @@
       </p>
       
       <form action="POST" class="form-content">
-        <section class="radio-input-wrapper">
-          <input type="radio" name="rating" class="radio-input rating-1" value="1">
-          <input type="radio" name="rating" class="radio-input rating-2" value="2">
-          <input type="radio" name="rating" class="radio-input rating-3" value="3">
-          <input type="radio" name="rating" class="radio-input rating-4" value="4">
-          <input type="radio" name="rating" class="radio-input rating-5" value="5">
-        </section>
+        <div class="radio-input-wrapper">
+          <div class="radio-input-bubble">
+            <input type="radio" name="rating" class="radio-input" id="val-1" value="1">
+            <label for="val-1" class="radio-input-label">1</label>
+          </div>
+          <div class="radio-input-bubble">
+            <input type="radio" name="rating" class="radio-input" id="val-2" value="2">
+            <label for="val-2" class="radio-input-label">2</label>
+          </div>
+          <div class="radio-input-bubble">
+            <input type="radio" name="rating" class="radio-input" id="val-3" value="3">
+            <label for="val-3" class="radio-input-label">3</label>
+          </div>
+          <div class="radio-input-bubble">
+            <input type="radio" name="rating" class="radio-input" id="val-4" value="4">
+            <label for="val-4" class="radio-input-label">4</label>
+          </div>
+          <div class="radio-input-bubble">
+            <input type="radio" name="rating" class="radio-input" id="val-5" value="5">
+            <label for="val-5" class="radio-input-label">5</label>
+          </div>
+        </div>
         <button type="submit" class="submit-button">Submit</button>
       </form>
     </section>
@@ -57,6 +72,12 @@
     </section>
 
   </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+    target="_blank" class="attribution-link">Frontend Mentor</a>. 
+    Coded by <span class="attribution-link">CloudOfAlemar</span>.
+  </footer>
 
 <script src="script.js"></script>
 </body>

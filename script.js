@@ -2,13 +2,13 @@
 const componentBaseRating = document.querySelector('.component-base-rating');
 const componentBaseThankYou = document.querySelector('.component-base-thank-you');
 
-const radioInputs = document.querySelectorAll('.radio-input');
+const radioInput = document.querySelectorAll('.radio-input');
 const submitButton = document.querySelector('.submit-button');
 const ratingDisplayValue = document.querySelector('.rating-display-value');
 
 let ratingValue = 0;
-for(let i = 0; i < radioInputs.length; i++) {
-  radioInputs[i].addEventListener('click', (e) => {
+for(let i = 0; i < radioInput.length; i++) {
+  radioInput[i].addEventListener('click', (e) => {
     ratingValue = parseInt(e.target.value);
   });
 }
